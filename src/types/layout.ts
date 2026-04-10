@@ -22,7 +22,9 @@ export interface LayoutResult {
 
 export interface PreparedBook {
   raw: string;
-  words: string[];
+  words?: string[];
+  native?: unknown;
+  nativeFont?: string;
 }
 
 export interface PretextAPI {

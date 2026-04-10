@@ -7,6 +7,7 @@ Boilerplate for a canvas-first typography layout engine with React + TypeScript.
 - `VellumLayoutEngine` React component for drawing laid out lines to canvas.
 - `useVellumReflow` hook for reactive typography changes (slider-ready).
 - `createPretextBridge` adapter that calls `prepare()` and `layout()` from a provided/global Pretext API.
+- Native integration with `@chenglou/pretext` for `prepareWithSegments` + `layoutWithLines`.
 - Retina/high-DPI canvas scaling in the render loop.
 
 ## Quick Start
@@ -25,6 +26,6 @@ npm run build
 
 ## Notes
 
-- If no Pretext API is provided, a lightweight fallback layout is used for local development.
-- Integrate real Pretext by passing a `{ prepare, layout }` implementation into both the hook/component.
+- The bridge uses `@chenglou/pretext` by default; pass a custom `{ prepare, layout }` only if you need to override behavior.
+- A lightweight fallback layout remains as a runtime safety net for environments where Pretext cannot initialize.
 
