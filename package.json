@@ -10,13 +10,17 @@
   },
   "dependencies": {
     "@chenglou/pretext": "^0.0.5",
+    "epubjs": "^0.3.93",
+    "lucide-react": "^0.542.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
-    "typescript": "^5.5.3"
+    "@vitejs/plugin-react": "^6.0.1",
+    "typescript": "^5.5.3",
+    "vite": "^8.0.8"
   },
   "private": true
 }
