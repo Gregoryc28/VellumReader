@@ -1,13 +1,20 @@
 {
   "name": "VellumReader",
   "version": "1.0.0",
-  "description": "",
+  "description": "Canvas-first typography engine boilerplate for VellumReader",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "typecheck": "tsc --noEmit",
     "build": "tsc"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
     "typescript": "^5.5.3"
   },
   "private": true
